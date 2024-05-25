@@ -2,12 +2,17 @@
 
 
 *{
-    background-color: antiquewhite;
     margin: 0;padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     text-transform: capitalize;
     transition: all .2s linear;  
+}
+body{
+    min-height: 100vh;
+    background: url(main\ pic.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header{
@@ -18,12 +23,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 9%;
-    border-bottom: 3px solid;   
+    padding: 3px 9%;  
 }
 .logo{
+   
     height: 80px;
     width: 150px;
+    color: white;
 }
 
 .navbar ul li{
@@ -33,11 +39,12 @@
 .navbar ul li a{
     position: relative;
     font-size: 18px;
-    color: black;
+    color: white;
     text-decoration:none;
     font-weight: 400;
     margin-left: 40px;
     display: inline-block;
+
     
 }
 
@@ -47,7 +54,7 @@
     top: 100%;left: 0;
     width:0;
     height: 2px;
-    background: black;
+    background: white;
     transition: .3s;
 }
 
@@ -71,23 +78,104 @@
     margin-top: 0;
 }
 
-
 .navbar hr{
     visibility: hidden;
 }
 
 
-
-
-.buttons {
-    size: 1;
-
+.button button{
+    width: 120px;height: 30px;
+    border-radius: 20px;
+    border: none;outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #adb0b2;
 }
 
-.buttons ::before{
-
+.button button:hover{
+    background-image: linear-gradient(0deg, rgb(62, 167, 209) 0%, rgb(12, 198, 201) 100%);;
 }
 
-.buttons :hover:before{
-
+.home{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: px;
 }
+
+.hometext{
+    padding-top: 480px;
+    padding-left: 80px;
+    color:aliceblue;
+}
+
+.hometext h3{
+    font-size: 2.4rem;
+}
+
+.hometext span{
+    color:aqua
+}
+
+
+.btn{
+    background-color:black;
+    border: none;
+    color:black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .btn:before,
+  .btn:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .btn:before {
+    border-color:aqua;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+  }
+  
+  .btn:after {
+    border-bottom-width: 2px;
+    border-color:aqua;
+    bottom: -5px;
+    right: 0px;
+  }
+  
+  .btn:hover,
+  .btn.hover {
+    background-color: aqua;
+  }
+  
+  .btn:hover:before,
+  .btn.hover:before,
+  .btn:hover:after,
+  .btn.hover:after {
+    height: 100%;
+    width: 100%;
+  }
+
+  .btn.strelka{
+    size: 5%;
+  }
