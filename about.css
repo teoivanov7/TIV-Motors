@@ -86,14 +86,7 @@
 }
 
 .button button:hover{
-    background-image: linear-gradient(0deg, rgb(62, 167, 209) 0%, rgb(12, 198, 201) 100%);;
+    background-image: linear-gradient(0deg, rgb(62, 167, 209) 0%, rgb(12, 198, 201) 100%);
 
 }
-
-section.vehicle.main{
-    position: absolute;
-    top: 100px;
-}
-
-
 
