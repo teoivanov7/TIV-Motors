@@ -11,14 +11,13 @@
 
 .header{
     width: 100%;
-    position: fixed;
     top: 0;left: 0;right: 0;
-    z-index:100;;
+    z-index:1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px 9%;
-    border-bottom: 3px solid;   
+    border-bottom: 3px solid black;   
 }
 .logo{
     height: 80px;
@@ -37,8 +36,6 @@
     font-weight: 400;
     margin-left: 40px;
     display: inline-block;
-
-    
 }
 
 .navbar ::before{
@@ -66,7 +63,7 @@
 }
 
 .navbar ul li:hover .submenu{
-    z-index: 99;
+    z-index: 999;
     opacity: 1;
     margin-top: 0;
     background-color: white;
@@ -87,8 +84,19 @@
 }
 
 .button button:hover{
-    background-image: linear-gradient(0deg, rgb(62, 167, 209) 0%, rgb(12, 198, 201) 100%);
+    background-image: linear-gradient(0deg, rgb(62, 167, 209) 0%, rgb(12, 198, 201) 100%);;
 
+}
+
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  color: black;
+}
+.about-img{
+align-items: left;
 }
 
 
@@ -118,18 +126,6 @@
   }
   body {
     color: white;
-    font-family: "IBM Plex Sans";
-    font-weight: 300;
-  
-    ;
-    flex-direction: column;
-  
-    align-items: center;
-    height: 190vh;
-    margin: 0;
-    color: #d5d5d5;
-    font-size: calc(0.3 * var(--m));
-    
   }
   
   h2 {
@@ -205,12 +201,6 @@
     background-color: #121212;
     border-radius: calc(0.5 * var(--m))
   }
-  
-  img {
-    height: calc(0.3 * var(--m));
-    object-fit: cover;
-  }
-  
   .social {
     display: flex;
     flex-direction: row;
